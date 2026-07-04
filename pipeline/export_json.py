@@ -3,7 +3,11 @@
 from __future__ import annotations
 
 import json
+import math
 from datetime import date, datetime
+
+import numpy as np
+import pandas as pd
 
 from config import DATA_PROCESSED, DISTRICT_BBOX, DISTRICT_DISPLAY_NAMES
 from utils import ensure_dirs, get_connection
@@ -14,6 +18,25 @@ class Encoder(json.JSONEncoder):
         if isinstance(obj, (datetime, date)):
             return obj.isoformat()
         return super().default(obj)
+
+
+def _sanitize_json(value):
+    """Convert pandas/numpy NaN and Inf to JSON-safe null."""
+    if isinstance(value, dict):
+        return {k: _sanitize_json(v) for k, v in value.items()}
+    if isinstance(value, list):
+        return [_sanitize_json(v) for v in value]
+    if isinstance(value, pd.DataFrame):
+        return _sanitize_json(value.where(pd.notnull(value), None).to_dict(orient="records"))
+    if isinstance(value, (np.floating, float)):
+        if math.isnan(value) or math.isinf(value):
+            return None
+        return float(value)
+    if isinstance(value, (np.integer,)):
+        return int(value)
+    if value is pd.NA:
+        return None
+    return value
 
 
 def export_overview(conn) -> None:
@@ -220,7 +243,10 @@ def export_insights_context(conn) -> None:
 
 def _write(filename: str, payload) -> None:
     path = DATA_PROCESSED / filename
-    path.write_text(json.dumps(payload, cls=Encoder, indent=2), encoding="utf-8")
+    path.write_text(
+        json.dumps(_sanitize_json(payload), cls=Encoder, indent=2, allow_nan=False),
+        encoding="utf-8",
+    )
     print(f"  Exported {filename}")
 
 

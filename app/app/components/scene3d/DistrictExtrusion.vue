@@ -11,50 +11,65 @@ const props = defineProps<{
 
 const { bboxSize } = useGeoProjection()
 
-const districtMetrics = computed(() => {
-  const map = new Map<string, DistrictDaily>()
-  for (const row of props.dailyData) {
-    if (row.date === props.selectedDate) {
-      map.set(row.district_slug, row)
-    }
-  }
-  return map
-})
-
-function barHeight(pm25: number): number {
-  return Math.max(0.3, pm25 / 4)
+function normalizeDate(value: string): string {
+  return value.slice(0, 10)
 }
+
+const districtMeshes = computed(() => {
+  const target = normalizeDate(props.selectedDate)
+  const result: {
+    slug: string
+    name: string
+    pm25: number
+    position: [number, number, number]
+    size: [number, number, number]
+    color: string
+  }[] = []
+
+  for (const district of props.districts) {
+    const metric = props.dailyData.find(
+      (row) => row.district_slug === district.slug && normalizeDate(row.date) === target,
+    )
+    if (!metric) continue
+
+    const size = bboxSize(district.bbox)
+    const height = Math.max(0.5, metric.pm25_avg / 1.5)
+    const color = pm25Color(metric.pm25_avg)
+
+    result.push({
+      slug: district.slug,
+      name: district.name,
+      pm25: metric.pm25_avg,
+      position: [size.center[0], height / 2, size.center[1]],
+      size: [
+        Math.max(0.7, size.width * 0.85),
+        height,
+        Math.max(0.7, size.depth * 0.85),
+      ],
+      color,
+    })
+  }
+
+  return result
+})
 </script>
 
 <template>
   <TresGroup>
-    <TresMesh :rotation="[-Math.PI / 2, 0, 0]" :position="[0, -0.05, 0]">
-      <TresPlaneGeometry :args="[12, 12]" />
-      <TresMeshStandardMaterial color="#1e293b" />
+    <!-- Ground plane -->
+    <TresMesh :rotation="[-Math.PI / 2, 0, 0]" :position="[0, -0.01, 0]">
+      <TresPlaneGeometry :args="[16, 16]" />
+      <TresMeshStandardMaterial color="#334155" />
     </TresMesh>
 
-    <TresGroup v-for="district in districts" :key="district.slug">
-      <TresMesh
-        v-if="districtMetrics.get(district.slug)"
-        :position="[
-          bboxSize(district.bbox).center[0],
-          barHeight(districtMetrics.get(district.slug)!.pm25_avg) / 2,
-          bboxSize(district.bbox).center[1],
-        ]"
-      >
-        <TresBoxGeometry
-          :args="[
-            Math.max(0.5, bboxSize(district.bbox).width * 0.8),
-            barHeight(districtMetrics.get(district.slug)!.pm25_avg),
-            Math.max(0.5, bboxSize(district.bbox).depth * 0.8),
-          ]"
-        />
-        <TresMeshStandardMaterial
-          :color="pm25Color(districtMetrics.get(district.slug)!.pm25_avg)"
-          :emissive="pm25Color(districtMetrics.get(district.slug)!.pm25_avg)"
-          :emissive-intensity="0.25"
-        />
-      </TresMesh>
-    </TresGroup>
+    <!-- District bars -->
+    <TresMesh
+      v-for="mesh in districtMeshes"
+      :key="mesh.slug"
+      :position="mesh.position"
+    >
+      <TresBoxGeometry :args="mesh.size" />
+      <TresMeshStandardMaterial :color="mesh.color" />
+    </TresMesh>
   </TresGroup>
 </template>

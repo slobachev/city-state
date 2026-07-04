@@ -20,9 +20,9 @@ const dates = computed(() => {
 })
 
 const index = computed({
-  get: () => dates.value.indexOf(props.modelValue),
+  get: () => dates.value.indexOf(props.modelValue.slice(0, 10)),
   set: (value: number) => {
-    emit('update:modelValue', dates.value[value] ?? props.modelValue)
+    emit('update:modelValue', dates.value[value] ?? props.modelValue.slice(0, 10))
   },
 })
 </script>
@@ -31,7 +31,7 @@ const index = computed({
   <div class="card">
     <div class="mb-2 flex items-center justify-between text-sm">
       <span class="text-slate-400">Timeline</span>
-      <span class="font-medium text-emerald-400">{{ modelValue }}</span>
+      <span class="font-medium text-emerald-400">{{ modelValue.slice(0, 10) }}</span>
     </div>
     <input
       v-model.number="index"

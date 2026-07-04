@@ -127,7 +127,7 @@
       "pm25_avg": 6.06,
       "exceedance_rate": 4.1,
       "stop_count": null,
-      "mobility_stop_density": NaN
+      "mobility_stop_density": null
     },
     {
       "district_slug": "pecherskyi",

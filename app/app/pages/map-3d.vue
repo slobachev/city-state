@@ -7,7 +7,7 @@ const { data: geo } = await useFetch<{ districts: DistrictGeo[] }>('/api/station
 const { data: daily } = await useFetch<DistrictDaily[]>('/api/districts')
 
 const dates = computed(() =>
-  [...new Set((daily.value ?? []).map((r) => r.date))].sort(),
+  [...new Set((daily.value ?? []).map((r) => r.date.slice(0, 10)))].sort(),
 )
 
 const selectedDate = ref('')
@@ -16,6 +16,12 @@ watch(dates, (value) => {
     selectedDate.value = value.at(-1)!
   }
 }, { immediate: true })
+
+const hasDataForDate = computed(() => {
+  if (!daily.value || !selectedDate.value) return false
+  const target = selectedDate.value.slice(0, 10)
+  return daily.value.some((row) => row.date.slice(0, 10) === target)
+})
 </script>
 
 <template>
@@ -42,10 +48,17 @@ watch(dates, (value) => {
     />
 
     <KyivScene
-      v-if="geo && daily && selectedDate"
+      v-if="geo && daily && selectedDate && hasDataForDate"
       :districts="geo.districts"
       :daily-data="daily"
       :selected-date="selectedDate"
     />
+
+    <div
+      v-else-if="geo && daily && selectedDate && !hasDataForDate"
+      class="card flex h-[480px] items-center justify-center text-sm text-slate-400"
+    >
+      No district data available for {{ selectedDate.slice(0, 10) }}.
+    </div>
   </div>
 </template>

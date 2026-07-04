@@ -11,5 +11,10 @@ export function readDataFile<T>(filename: string): T {
       statusMessage: `Data file not found: ${filename}`,
     })
   }
-  return JSON.parse(readFileSync(filePath, 'utf-8')) as T
+  const raw = readFileSync(filePath, 'utf-8')
+  // Pandas exports NaN/Infinity literals that are invalid in strict JSON.
+  const sanitized = raw
+    .replace(/:\s*NaN\b/g, ': null')
+    .replace(/:\s*-?Infinity\b/g, ': null')
+  return JSON.parse(sanitized) as T
 }

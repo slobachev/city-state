@@ -41,7 +41,7 @@ function isActive(path: string): boolean {
       </div>
     </header>
     <main class="mx-auto max-w-7xl px-4 py-8">
-      <slot />
+      <NuxtPage />
     </main>
     <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
       Air quality data from
