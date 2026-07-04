@@ -1,0 +1,3 @@
+# Placeholder for raw downloaded data (gitignored except metadata)
+
+Raw CSV, GTFS zips, and API snapshots are stored here during pipeline runs.

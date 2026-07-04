@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-07-04T13:38:14.146040Z",
+  "city": "Kyiv",
+  "kpis": {
+    "pm25_avg": 6.18,
+    "aqi_avg": 25.1,
+    "exceedance_rate": 3.0,
+    "period_start": "2026-04-05T16:00:00",
+    "period_end": "2026-07-04T16:00:00"
+  },
+  "worst_districts": [
+    {
+      "district_slug": "sviatoshynskyi",
+      "district_name": "Sviatoshynskyi",
+      "pm25_avg": 8.378456668381638,
+      "exceedance_rate": 8.379120879120878
+    },
+    {
+      "district_slug": "solomianskyi",
+      "district_name": "Solomianskyi",
+      "pm25_avg": 8.3200646282489,
+      "exceedance_rate": 12.5
+    },
+    {
+      "district_slug": "podilskyi",
+      "district_name": "Podilskyi",
+      "pm25_avg": 7.456394760151252,
+      "exceedance_rate": 5.196629213483147
+    }
+  ],
+  "best_districts": [
+    {
+      "district_slug": "holosiivskyi",
+      "district_name": "Holosiivskyi",
+      "pm25_avg": 4.522777711875265,
+      "exceedance_rate": 1.1973180076628354
+    },
+    {
+      "district_slug": "obolonskyi",
+      "district_name": "Obolonskyi",
+      "pm25_avg": 4.997340550605857,
+      "exceedance_rate": 2.2435897435897436
+    },
+    {
+      "district_slug": "pecherskyi",
+      "district_name": "Pecherskyi",
+      "pm25_avg": 5.573623431790299,
+      "exceedance_rate": 3.0219780219780215
+    }
+  ],
+  "seasonal": [
+    {
+      "season": "summer",
+      "pm25_avg": 7.397738574325835
+    },
+    {
+      "season": "spring",
+      "pm25_avg": 5.858713164167401
+    }
+  ],
+  "correlations": {
+    "pm25_wind": -0.232,
+    "pm25_humidity": 0.27,
+    "pm25_temperature": 0.109,
+    "sample_size": 2161
+  },
+  "findings": [
+    "Sviatoshynskyi has the highest average PM2.5 (8.4 \u00b5g/m\u00b3) across the observation period.",
+    "Seasonal pattern: summer averages 7.4 \u00b5g/m\u00b3 vs spring at 5.9 \u00b5g/m\u00b3.",
+    "PM2.5 shows a negative correlation with wind speed (r = -0.23), suggesting dispersion effects.",
+    "Holosiivskyi consistently reports the lowest PM2.5 levels (4.5 \u00b5g/m\u00b3 average)."
+  ]
+}

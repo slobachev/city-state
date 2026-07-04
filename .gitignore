@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Data warehouse (regenerated locally)
+data/warehouse/
+data/raw/*.zip
+data/raw/gtfs/
+data/raw/*.csv
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Nuxt
+app/.nuxt/
+app/.output/
+app/dist/
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+Thumbs.db

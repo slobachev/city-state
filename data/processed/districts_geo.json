@@ -1,0 +1,144 @@
+{
+  "districts": [
+    {
+      "slug": "holosiivskyi",
+      "name": "Holosiivskyi",
+      "centroid": {
+        "lat": 50.395,
+        "lon": 30.505
+      },
+      "bbox": {
+        "min_lat": 50.34,
+        "max_lat": 50.43,
+        "min_lon": 30.45,
+        "max_lon": 30.56
+      }
+    },
+    {
+      "slug": "darnytskyi",
+      "name": "Darnytskyi",
+      "centroid": {
+        "lat": 50.405,
+        "lon": 30.645
+      },
+      "bbox": {
+        "min_lat": 50.36,
+        "max_lat": 50.45,
+        "min_lon": 30.58,
+        "max_lon": 30.72
+      }
+    },
+    {
+      "slug": "desnianskyi",
+      "name": "Desnianskyi",
+      "centroid": {
+        "lat": 50.515,
+        "lon": 30.615
+      },
+      "bbox": {
+        "min_lat": 50.48,
+        "max_lat": 50.55,
+        "min_lon": 30.55,
+        "max_lon": 30.68
+      }
+    },
+    {
+      "slug": "dniprovskyi",
+      "name": "Dniprovskyi",
+      "centroid": {
+        "lat": 50.455,
+        "lon": 30.605
+      },
+      "bbox": {
+        "min_lat": 50.42,
+        "max_lat": 50.49,
+        "min_lon": 30.55,
+        "max_lon": 30.66
+      }
+    },
+    {
+      "slug": "obolonskyi",
+      "name": "Obolonskyi",
+      "centroid": {
+        "lat": 50.515,
+        "lon": 30.495
+      },
+      "bbox": {
+        "min_lat": 50.48,
+        "max_lat": 50.55,
+        "min_lon": 30.42,
+        "max_lon": 30.56
+      }
+    },
+    {
+      "slug": "pecherskyi",
+      "name": "Pecherskyi",
+      "centroid": {
+        "lat": 50.425,
+        "lon": 30.545
+      },
+      "bbox": {
+        "min_lat": 50.4,
+        "max_lat": 50.45,
+        "min_lon": 30.5,
+        "max_lon": 30.6
+      }
+    },
+    {
+      "slug": "podilskyi",
+      "name": "Podilskyi",
+      "centroid": {
+        "lat": 50.475,
+        "lon": 30.485
+      },
+      "bbox": {
+        "min_lat": 50.44,
+        "max_lat": 50.51,
+        "min_lon": 30.42,
+        "max_lon": 30.55
+      }
+    },
+    {
+      "slug": "sviatoshynskyi",
+      "name": "Sviatoshynskyi",
+      "centroid": {
+        "lat": 50.455,
+        "lon": 30.395
+      },
+      "bbox": {
+        "min_lat": 50.42,
+        "max_lat": 50.49,
+        "min_lon": 30.34,
+        "max_lon": 30.45
+      }
+    },
+    {
+      "slug": "solomianskyi",
+      "name": "Solomianskyi",
+      "centroid": {
+        "lat": 50.435,
+        "lon": 30.475
+      },
+      "bbox": {
+        "min_lat": 50.4,
+        "max_lat": 50.47,
+        "min_lon": 30.42,
+        "max_lon": 30.53
+      }
+    },
+    {
+      "slug": "shevchenkivskyi",
+      "name": "Shevchenkivskyi",
+      "centroid": {
+        "lat": 50.455,
+        "lon": 30.515
+      },
+      "bbox": {
+        "min_lat": 50.43,
+        "max_lat": 50.48,
+        "min_lon": 30.48,
+        "max_lon": 30.55
+      }
+    }
+  ]
+}
