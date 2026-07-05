@@ -1,15 +1,16 @@
 <script setup lang="ts">
-import type { DistrictDaily, MobilityProxy } from '~/types/analytics';
+import type { DistrictDaily, MobilityProxy, OverviewData } from '~/types/analytics';
 import ChartPanel from '~/components/charts/ChartPanel.vue';
 import FilterBar from '~/components/filters/FilterBar.vue';
-import { pm25Color } from '~/composables/useAirMetrics';
+import { formatDateTime, pm25Color } from '~/composables/useAirMetrics';
 
+const { data: overview } = await useFetch<OverviewData>('/api/overview');
 const { data: geo } = await useFetch<{ districts: { slug: string; name: string }[] }>('/api/stations');
 const { data: mobility } = await useFetch<MobilityProxy[]>('/api/mobility');
 
 const selectedDistrict = ref('');
-const dateFrom = ref('2026-04-05');
-const dateTo = ref('2026-07-04');
+const dateFrom = ref(overview.value?.kpis.period_start.slice(0, 10) ?? '');
+const dateTo = ref(overview.value?.kpis.period_end.slice(0, 10) ?? '');
 
 const query = computed(() => ({
     district: selectedDistrict.value || undefined,
@@ -115,6 +116,12 @@ const scatterOption = computed(() => {
             <h2 class="text-2xl font-semibold">Explore</h2>
             <p class="mt-1 text-slate-400">
                 Filter districts and date ranges to drill into PM2.5 trends and mobility proxy relationships.
+            </p>
+            <p
+                v-if="overview?.generated_at"
+                class="mt-1 text-xs text-slate-500"
+            >
+                Chart data updated daily · last batch {{ formatDateTime(overview.generated_at) }}
             </p>
         </section>
 

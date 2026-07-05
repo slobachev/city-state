@@ -32,6 +32,16 @@ export function formatDate(value: string): string {
   })
 }
 
+export function formatDateTime(value: string): string {
+  return new Date(value).toLocaleString('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+  })
+}
+
 export function formatNumber(value: number, digits = 1): string {
   return value.toFixed(digits)
 }

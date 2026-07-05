@@ -23,10 +23,17 @@ def get_connection() -> duckdb.DuckDBPyConnection:
     return duckdb.connect(str(DB_PATH))
 
 
+def _refresh_cache() -> bool:
+    """Return True when pipeline should bypass local JSON cache."""
+    import os
+
+    return os.environ.get("PIPELINE_REFRESH") == "1"
+
+
 def fetch_json(url: str, timeout: int = 60, cache_name: str | None = None) -> dict:
     """Fetch JSON using curl (Cloudflare-safe) with optional local cache."""
     ensure_dirs()
-    if cache_name:
+    if cache_name and not _refresh_cache():
         cache_path = DATA_RAW / cache_name
         if cache_path.exists():
             return json.loads(cache_path.read_text(encoding="utf-8"))

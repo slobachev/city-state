@@ -1,11 +1,21 @@
 <script setup lang="ts">
 import type { OverviewData } from '~/types/analytics';
-import { formatDate, formatNumber, pm25Color } from '~/composables/useAirMetrics';
+import {
+    aqiColor,
+    aqiLabel,
+    formatDate,
+    formatDateTime,
+    formatNumber,
+    pm25Color,
+} from '~/composables/useAirMetrics';
 
 const { data: overview } = await useFetch<OverviewData>('/api/overview');
-const { data: geo } = await useFetch<{
-    districts: { slug: string; name: string; centroid: { lat: number; lon: number } }[];
-}>('/api/stations');
+const { data: city, refresh: refreshLive, status: liveStatus } = await useLiveCityAir({ city: 'kyiv' });
+
+const liveUpdated = computed(() => {
+    const raw = city.value?.aqi_updated_at;
+    return raw ? formatDateTime(raw) : null;
+});
 </script>
 
 <template>
@@ -18,32 +28,98 @@ const { data: geo } = await useFetch<{
             </p>
         </section>
 
-        <section class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="card">
-                <p class="text-xs uppercase text-slate-400">Avg PM2.5</p>
-                <p class="kpi-value">
-                    {{ formatNumber(overview.kpis.pm25_avg) }}
-                </p>
-                <p class="text-xs text-slate-500">µg/m³</p>
+        <!-- Live layer -->
+        <section class="space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+                <div>
+                    <h3 class="text-sm font-medium uppercase tracking-wide text-emerald-400">Live Now</h3>
+                    <p class="text-xs text-slate-500">City-wide average from SaveEcoBot sensor network</p>
+                </div>
+                <button
+                    type="button"
+                    class="rounded-lg border border-slate-700 px-3 py-1.5 text-xs hover:bg-slate-800"
+                    :disabled="liveStatus === 'pending'"
+                    @click="refreshLive()"
+                >
+                    Refresh
+                </button>
             </div>
-            <div class="card">
-                <p class="text-xs uppercase text-slate-400">Avg AQI PM2.5</p>
-                <p class="kpi-value">
-                    {{ formatNumber(overview.kpis.aqi_avg, 0) }}
+
+            <div v-if="city" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="card border-emerald-900/40">
+                    <p class="text-xs uppercase text-slate-400">AQI PM2.5</p>
+                    <p class="kpi-value" :style="{ color: aqiColor(city.aqi) }">
+                        {{ city.aqi }}
+                    </p>
+                    <p class="text-xs text-slate-500">
+                        {{ aqiLabel(city.aqi) }}
+                        <span v-if="city.aqi_is_old" class="text-amber-400"> · stale</span>
+                    </p>
+                </div>
+                <div class="card border-emerald-900/40">
+                    <p class="text-xs uppercase text-slate-400">Temperature</p>
+                    <p class="kpi-value">{{ city.meteo.temperature.value }}°C</p>
+                </div>
+                <div class="card border-emerald-900/40">
+                    <p class="text-xs uppercase text-slate-400">Humidity</p>
+                    <p class="kpi-value">{{ city.meteo.humidity.value }}%</p>
+                </div>
+                <div class="card border-emerald-900/40">
+                    <p class="text-xs uppercase text-slate-400">Updated</p>
+                    <p class="mt-2 text-sm text-slate-200">{{ liveUpdated ?? '—' }}</p>
+                    <p class="text-xs text-slate-500">NowCast (US EPA)</p>
+                </div>
+            </div>
+
+            <div
+                v-else-if="liveStatus === 'pending'"
+                class="card flex h-20 items-center justify-center text-sm text-slate-400"
+            >
+                Loading live data…
+            </div>
+        </section>
+
+        <!-- Batch analytics layer -->
+        <section class="space-y-3">
+            <div>
+                <h3 class="text-sm font-medium uppercase tracking-wide text-slate-400">
+                    Historical Analytics
+                </h3>
+                <p class="text-xs text-slate-500">
+                    Charts and rankings updated daily
+                    <span v-if="overview.generated_at">
+                        · last batch {{ formatDateTime(overview.generated_at) }}
+                    </span>
                 </p>
             </div>
-            <div class="card">
-                <p class="text-xs uppercase text-slate-400">WHO Exceedance</p>
-                <p class="kpi-value">{{ formatNumber(overview.kpis.exceedance_rate) }}%</p>
-                <p class="text-xs text-slate-500">hours &gt; 15 µg/m³</p>
-            </div>
-            <div class="card">
-                <p class="text-xs uppercase text-slate-400">Period</p>
-                <p class="mt-2 text-sm text-slate-200">
-                    {{ formatDate(overview.kpis.period_start) }}
-                    —
-                    {{ formatDate(overview.kpis.period_end) }}
-                </p>
+
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="card">
+                    <p class="text-xs uppercase text-slate-400">Avg PM2.5</p>
+                    <p class="kpi-value">
+                        {{ formatNumber(overview.kpis.pm25_avg) }}
+                    </p>
+                    <p class="text-xs text-slate-500">µg/m³ over period</p>
+                </div>
+                <div class="card">
+                    <p class="text-xs uppercase text-slate-400">Avg AQI PM2.5</p>
+                    <p class="kpi-value">
+                        {{ formatNumber(overview.kpis.aqi_avg, 0) }}
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="text-xs uppercase text-slate-400">WHO Exceedance</p>
+                    <p class="kpi-value">{{ formatNumber(overview.kpis.exceedance_rate) }}%</p>
+                    <p class="text-xs text-slate-500">hours &gt; 15 µg/m³</p>
+                </div>
+                <div class="card">
+                    <p class="text-xs uppercase text-slate-400">Period</p>
+                    <p class="mt-2 text-sm text-slate-200">
+                        {{ formatDate(overview.kpis.period_start) }}
+                        —
+                        {{ formatDate(overview.kpis.period_end) }}
+                    </p>
+                </div>
             </div>
         </section>
 

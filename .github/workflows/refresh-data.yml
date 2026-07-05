@@ -1,0 +1,38 @@
+name: Refresh air quality data
+
+on:
+  schedule:
+    # 05:00 UTC daily (~08:00 Kyiv in summer)
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pipeline dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Run data pipeline
+        run: python pipeline/run_all.py --refresh
+
+      - name: Commit updated aggregates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/processed/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: refresh air quality data"
+            git push
+          fi

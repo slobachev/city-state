@@ -110,7 +110,7 @@ function buildTemplateInsights(
       'Mobility metrics reflect scheduled public transport infrastructure, not real-time traffic.',
       'PM2.5 is estimated from AQI where raw concentration is unavailable.',
       'Correlation does not imply causation.',
-      'Static snapshot — refresh pipeline for latest data.',
+      'Historical charts and rankings are refreshed once per day via automated pipeline.',
     ],
     confidence: 'medium',
     source: 'template',

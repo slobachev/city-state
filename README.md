@@ -20,7 +20,15 @@ does it relate to weather conditions and urban mobility infrastructure?
 
 - [SaveEcoBot](https://www.saveecobot.com/en/maps/kyiv) — air quality (CC BY 4.0)
 - [Open-Meteo](https://open-meteo.com/) — historical weather
-- [Kyiv GTFS](https://data.gov.ua/) — public transport schedules (mobility proxy)
+- [City GTFS](https://data.gov.ua/) — public transport schedules (mobility proxy)
+
+## Data Freshness
+
+| Layer              | Source                                  | Update frequency                 |
+| ------------------ | --------------------------------------- | -------------------------------- |
+| Live AQI & weather | SaveEcoBot API (`/api/saveecobot/kyiv`) | On page load / manual refresh    |
+| Charts & rankings  | Python pipeline → `data/processed/`     | Daily (GitHub Actions cron)      |
+| Mobility proxy     | City GTFS                               | Weekly or on manual pipeline run |
 
 ## Quick Start
 
@@ -30,8 +38,11 @@ does it relate to weather conditions and urban mobility infrastructure?
 python -m venv .venv
 .venv\Scripts\activate        # Windows
 pip install -r pipeline/requirements.txt
-python pipeline/run_all.py
+python pipeline/run_all.py          # use cached SaveEcoBot data if available
+python pipeline/run_all.py --refresh  # fetch fresh data from APIs
 ```
+
+Charts and rankings in `data/processed/` are refreshed automatically once per day via GitHub Actions (`.github/workflows/refresh-data.yml`). Live AQI on the Overview and Map pages comes directly from SaveEcoBot at request time.
 
 ### 2. Dashboard
 
