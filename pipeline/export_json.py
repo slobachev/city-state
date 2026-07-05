@@ -9,7 +9,20 @@ from datetime import date, datetime
 import numpy as np
 import pandas as pd
 
-from config import DATA_PROCESSED, DISTRICT_BBOX, DISTRICT_DISPLAY_NAMES
+from config import DATA_PROCESSED, DATA_RAW, DISTRICT_BBOX, DISTRICT_DISPLAY_NAMES
+
+KYIV_DISTRICT_NAME_TO_SLUG = {
+    "Голосіївський": "holosiivskyi",
+    "Дарницький": "darnytskyi",
+    "Деснянський": "desnianskyi",
+    "Дніпровський": "dniprovskyi",
+    "Оболонський": "obolonskyi",
+    "Печерський": "pecherskyi",
+    "Подільський": "podilskyi",
+    "Святошинський": "sviatoshynskyi",
+    "Солом'янський": "solomianskyi",
+    "Шевченківський": "shevchenkivskyi",
+}
 from utils import ensure_dirs, get_connection
 
 
@@ -184,23 +197,44 @@ def export_timeseries(conn) -> None:
     _write("timeseries_hourly.json", df.to_dict(orient="records"))
 
 
+def _load_kyiv_district_polygons() -> dict[str, list[list[float]]]:
+    """Load official Kyiv district polygons from raw GeoJSON (WGS84 lon/lat)."""
+    path = DATA_RAW / "kyiv_districts.geojson"
+    if not path.exists():
+        return {}
+
+    geo = json.loads(path.read_text(encoding="utf-8"))
+    polygons: dict[str, list[list[float]]] = {}
+    for feature in geo.get("features", []):
+        name = feature.get("properties", {}).get("name_2")
+        slug = KYIV_DISTRICT_NAME_TO_SLUG.get(name)
+        if not slug:
+            continue
+        ring = feature.get("geometry", {}).get("coordinates", [[]])[0]
+        if ring:
+            polygons[slug] = [[lon, lat] for lon, lat in ring]
+    return polygons
+
+
 def export_districts_geo() -> None:
-    """Export district centroids and bounding boxes for maps."""
+    """Export district centroids, bounding boxes, and polygon boundaries for maps."""
+    polygons = _load_kyiv_district_polygons()
     districts = []
     for slug, bbox in DISTRICT_BBOX.items():
-        districts.append(
-            {
-                "slug": slug,
-                "name": DISTRICT_DISPLAY_NAMES[slug],
-                "centroid": {"lat": bbox["lat"], "lon": bbox["lon"]},
-                "bbox": {
-                    "min_lat": bbox["min_lat"],
-                    "max_lat": bbox["max_lat"],
-                    "min_lon": bbox["min_lon"],
-                    "max_lon": bbox["max_lon"],
-                },
-            }
-        )
+        entry = {
+            "slug": slug,
+            "name": DISTRICT_DISPLAY_NAMES[slug],
+            "centroid": {"lat": bbox["lat"], "lon": bbox["lon"]},
+            "bbox": {
+                "min_lat": bbox["min_lat"],
+                "max_lat": bbox["max_lat"],
+                "min_lon": bbox["min_lon"],
+                "max_lon": bbox["max_lon"],
+            },
+        }
+        if slug in polygons:
+            entry["polygon"] = polygons[slug]
+        districts.append(entry)
     _write("districts_geo.json", {"districts": districts})
 
 

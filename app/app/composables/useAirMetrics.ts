@@ -7,6 +7,15 @@ export function aqiColor(aqi: number): string {
   return '#a855f7'
 }
 
+export function aqiLabel(aqi: number): string {
+  if (aqi <= 50) return 'Good'
+  if (aqi <= 100) return 'Moderate'
+  if (aqi <= 150) return 'Unhealthy for sensitive groups'
+  if (aqi <= 200) return 'Unhealthy'
+  if (aqi <= 300) return 'Very unhealthy'
+  return 'Hazardous'
+}
+
 export function pm25Color(pm25: number): string {
   if (pm25 <= 12) return '#22c55e'
   if (pm25 <= 35.4) return '#eab308'

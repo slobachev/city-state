@@ -47,7 +47,7 @@
         <li>dbt-lite SQL transforms in <code>transform/</code> (staging → marts)</li>
         <li>Export aggregated JSON to <code>data/processed/</code></li>
         <li>Nuxt server API serves static aggregates (no runtime analytics)</li>
-        <li>TresJS 3D scene visualizes district-level PM2.5 extrusions</li>
+        <li>SaveEcoBot live map embed shows real-time sensor network across Kyiv</li>
       </ol>
     </section>
 

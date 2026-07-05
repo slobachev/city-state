@@ -48,6 +48,8 @@ export interface DistrictGeo {
     min_lon: number
     max_lon: number
   }
+  /** WGS84 polygon ring as [lon, lat] pairs — from Kyiv City GIS boundaries. */
+  polygon?: [number, number][]
 }
 
 export interface TimeseriesPoint {

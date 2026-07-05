@@ -2,11 +2,8 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@tresjs/nuxt'],
+  modules: ['@nuxtjs/tailwindcss'],
   css: ['~/assets/css/main.css'],
-  tres: {
-    devtools: true,
-  },
   runtimeConfig: {
     aiApiKey: process.env.NUXT_AI_API_KEY || '',
     aiModel: process.env.NUXT_AI_MODEL || 'gpt-4o-mini',

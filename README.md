@@ -8,12 +8,12 @@ does it relate to weather conditions and urban mobility infrastructure?
 
 ## Stack
 
-| Layer | Technology |
-|-------|------------|
-| Frontend | Nuxt 4, Vue 3, Tailwind CSS |
-| 3D Visualization | TresJS, Three.js |
-| Charts | ECharts (vue-echarts) |
-| Analytics | Python, DuckDB, SQL (dbt-lite) |
+| Layer       | Technology                     |
+| ----------- | ------------------------------ |
+| Frontend    | Nuxt 4, Vue 3, Tailwind CSS    |
+| Live Map    | SaveEcoBot embed               |
+| Charts      | ECharts (vue-echarts)          |
+| Analytics   | Python, DuckDB, SQL (dbt-lite) |
 | AI Insights | OpenAI API (optional fallback) |
 
 ## Data Sources
@@ -70,13 +70,13 @@ NUXT_AI_API_KEY=sk-...
 
 ## Pages
 
-| Route | Description |
-|-------|-------------|
-| `/` | KPI overview and key findings |
-| `/explore` | 2D charts with filters |
-| `/map-3d` | TresJS district extrusion map |
-| `/insights` | AI-assisted summary |
-| `/methodology` | Data sources and limitations |
+| Route          | Description                     |
+| -------------- | ------------------------------- |
+| `/`            | KPI overview and key findings   |
+| `/explore`     | 2D charts with filters          |
+| `/map`         | SaveEcoBot live air quality map |
+| `/insights`    | AI-assisted summary             |
+| `/methodology` | Data sources and limitations    |
 
 ## License
 
