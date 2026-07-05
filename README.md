@@ -1,9 +1,9 @@
-# Kyiv Urban Mobility & Air Quality Explorer
+# Cities Urban Mobility & Air Quality Explorer
 
-Portfolio data analytics project: interactive dashboard for Kyiv air quality,
+Data analytics project: interactive dashboard for cities air quality,
 weather correlations, and public transport mobility proxy metrics.
 
-**Business question:** Which Kyiv districts have the worst air quality, and how
+**Business question:** Which city (currently Kyiv) districts have the worst air quality, and how
 does it relate to weather conditions and urban mobility infrastructure?
 
 ## Stack
@@ -43,7 +43,7 @@ npm run dev
 
 Open http://localhost:3000
 
-### 3. AI Insights (optional)
+### 3. AI Insights
 
 ```bash
 # app/.env
@@ -60,13 +60,6 @@ NUXT_AI_API_KEY=sk-...
 ├── notebooks/         # EDA notebooks
 └── docs/              # Metrics & data dictionary
 ```
-
-## Key Findings (Apr–Jul 2026 snapshot)
-
-1. **Sviatoshynskyi** has the highest average PM2.5 (~8.4 µg/m³)
-2. **Holosiivskyi** reports the lowest levels (~4.5 µg/m³)
-3. **Summer** averages higher PM2.5 than spring (7.4 vs 5.9 µg/m³)
-4. **Negative correlation** with wind speed (r ≈ -0.23) suggests dispersion effects
 
 ## Pages
 
