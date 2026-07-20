@@ -51,9 +51,9 @@
     "district_slug": "podilskyi",
     "stop_count": 194,
     "route_count": 55,
-    "total_trips": 14489.0,
+    "total_trips": 14469.0,
     "mobility_stop_density": 7.76,
-    "trips_per_hour_proxy": 2.21
+    "trips_per_hour_proxy": 2.2
   },
   {
     "district_slug": "solomianskyi",
