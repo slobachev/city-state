@@ -25,11 +25,11 @@
   },
   {
     "district_slug": "holosiivskyi",
-    "stop_count": 236,
-    "route_count": 45,
-    "total_trips": 13854.0,
-    "mobility_stop_density": 9.44,
-    "trips_per_hour_proxy": 2.11
+    "stop_count": 243,
+    "route_count": 46,
+    "total_trips": 14158.0,
+    "mobility_stop_density": 9.72,
+    "trips_per_hour_proxy": 2.15
   },
   {
     "district_slug": "obolonskyi",
