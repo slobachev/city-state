@@ -33,11 +33,11 @@
   },
   {
     "district_slug": "obolonskyi",
-    "stop_count": 220,
-    "route_count": 46,
-    "total_trips": 15595.0,
-    "mobility_stop_density": 8.8,
-    "trips_per_hour_proxy": 2.37
+    "stop_count": 213,
+    "route_count": 45,
+    "total_trips": 15640.0,
+    "mobility_stop_density": 8.52,
+    "trips_per_hour_proxy": 2.38
   },
   {
     "district_slug": "pecherskyi",
@@ -51,9 +51,9 @@
     "district_slug": "podilskyi",
     "stop_count": 196,
     "route_count": 53,
-    "total_trips": 14877.0,
+    "total_trips": 14913.0,
     "mobility_stop_density": 7.84,
-    "trips_per_hour_proxy": 2.26
+    "trips_per_hour_proxy": 2.27
   },
   {
     "district_slug": "solomianskyi",
