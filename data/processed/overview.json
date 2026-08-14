@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-08-13T06:11:54.123740Z",
+  "generated_at": "2026-08-14T06:08:41.392274Z",
   "city": "Kyiv",
   "kpis": {
-    "pm25_avg": 6.34,
-    "aqi_avg": 25.6,
+    "pm25_avg": 6.32,
+    "aqi_avg": 25.5,
     "exceedance_rate": 3.7,
-    "period_start": "2026-05-15T08:00:00",
-    "period_end": "2026-08-13T08:00:00"
+    "period_start": "2026-05-16T08:00:00",
+    "period_end": "2026-08-14T08:00:00"
   },
   "worst_districts": [
     {
       "district_slug": "solomianskyi",
       "district_name": "Solomianskyi",
-      "pm25_avg": 9.195570127151761,
+      "pm25_avg": 9.180606757188391,
       "exceedance_rate": 15.888278388278387
     },
     {
       "district_slug": "sviatoshynskyi",
       "district_name": "Sviatoshynskyi",
-      "pm25_avg": 8.528944830679523,
+      "pm25_avg": 8.5166005083352,
       "exceedance_rate": 10.714285714285714
     },
     {
       "district_slug": "podilskyi",
       "district_name": "Podilskyi",
-      "pm25_avg": 7.817234534263142,
+      "pm25_avg": 7.799931163476625,
       "exceedance_rate": 7.303370786516854
     }
   ],
@@ -32,36 +32,36 @@
     {
       "district_slug": "holosiivskyi",
       "district_name": "Holosiivskyi",
-      "pm25_avg": 5.412954779567545,
+      "pm25_avg": 5.414793860027315,
       "exceedance_rate": 1.5804597701149425
     },
     {
       "district_slug": "obolonskyi",
       "district_name": "Obolonskyi",
-      "pm25_avg": 5.904104607886682,
+      "pm25_avg": 5.8472864260685,
       "exceedance_rate": 6.362999745352687
     },
     {
       "district_slug": "darnytskyi",
       "district_name": "Darnytskyi",
-      "pm25_avg": 5.93054851610974,
+      "pm25_avg": 5.923900164461389,
       "exceedance_rate": 2.4267399267399266
     }
   ],
   "seasonal": [
     {
       "season": "summer",
-      "pm25_avg": 7.205504716270659
+      "pm25_avg": 7.153539715593005
     },
     {
       "season": "spring",
-      "pm25_avg": 5.253107074068527
+      "pm25_avg": 5.2918318865088185
     }
   ],
   "correlations": {
     "pm25_wind": -0.186,
-    "pm25_humidity": 0.117,
-    "pm25_temperature": 0.37,
+    "pm25_humidity": 0.121,
+    "pm25_temperature": 0.371,
     "sample_size": 2161
   },
   "findings": [
