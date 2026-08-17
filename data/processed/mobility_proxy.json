@@ -11,15 +11,15 @@
     "district_slug": "desnianskyi",
     "stop_count": 169,
     "route_count": 32,
-    "total_trips": 11333.0,
+    "total_trips": 11340.0,
     "mobility_stop_density": 6.76,
-    "trips_per_hour_proxy": 1.72
+    "trips_per_hour_proxy": 1.73
   },
   {
     "district_slug": "dniprovskyi",
     "stop_count": 113,
     "route_count": 41,
-    "total_trips": 8403.0,
+    "total_trips": 8409.0,
     "mobility_stop_density": 4.52,
     "trips_per_hour_proxy": 1.28
   },
@@ -27,15 +27,15 @@
     "district_slug": "holosiivskyi",
     "stop_count": 218,
     "route_count": 43,
-    "total_trips": 13648.0,
+    "total_trips": 13702.0,
     "mobility_stop_density": 8.72,
-    "trips_per_hour_proxy": 2.08
+    "trips_per_hour_proxy": 2.09
   },
   {
     "district_slug": "obolonskyi",
     "stop_count": 213,
     "route_count": 45,
-    "total_trips": 15617.0,
+    "total_trips": 15638.0,
     "mobility_stop_density": 8.52,
     "trips_per_hour_proxy": 2.38
   },
@@ -43,32 +43,32 @@
     "district_slug": "pecherskyi",
     "stop_count": 68,
     "route_count": 25,
-    "total_trips": 4581.0,
+    "total_trips": 4588.0,
     "mobility_stop_density": 2.72,
     "trips_per_hour_proxy": 0.7
   },
   {
     "district_slug": "podilskyi",
-    "stop_count": 198,
+    "stop_count": 196,
     "route_count": 53,
-    "total_trips": 14777.0,
-    "mobility_stop_density": 7.92,
-    "trips_per_hour_proxy": 2.25
+    "total_trips": 14881.0,
+    "mobility_stop_density": 7.84,
+    "trips_per_hour_proxy": 2.26
   },
   {
     "district_slug": "solomianskyi",
-    "stop_count": 45,
-    "route_count": 21,
-    "total_trips": 3314.0,
-    "mobility_stop_density": 1.8,
+    "stop_count": 43,
+    "route_count": 19,
+    "total_trips": 3312.0,
+    "mobility_stop_density": 1.72,
     "trips_per_hour_proxy": 0.5
   },
   {
     "district_slug": "sviatoshynskyi",
     "stop_count": 121,
     "route_count": 32,
-    "total_trips": 8482.0,
+    "total_trips": 8626.0,
     "mobility_stop_density": 4.84,
-    "trips_per_hour_proxy": 1.29
+    "trips_per_hour_proxy": 1.31
   }
 ]
