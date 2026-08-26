@@ -11,7 +11,7 @@
     "district_slug": "desnianskyi",
     "stop_count": 169,
     "route_count": 32,
-    "total_trips": 11340.0,
+    "total_trips": 11354.0,
     "mobility_stop_density": 6.76,
     "trips_per_hour_proxy": 1.73
   },
@@ -19,7 +19,7 @@
     "district_slug": "dniprovskyi",
     "stop_count": 113,
     "route_count": 41,
-    "total_trips": 8409.0,
+    "total_trips": 8411.0,
     "mobility_stop_density": 4.52,
     "trips_per_hour_proxy": 1.28
   },
@@ -35,7 +35,7 @@
     "district_slug": "obolonskyi",
     "stop_count": 213,
     "route_count": 45,
-    "total_trips": 15638.0,
+    "total_trips": 15653.0,
     "mobility_stop_density": 8.52,
     "trips_per_hour_proxy": 2.38
   },
