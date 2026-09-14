@@ -3,9 +3,9 @@
     "district_slug": "darnytskyi",
     "stop_count": 193,
     "route_count": 37,
-    "total_trips": 13941.0,
+    "total_trips": 14063.0,
     "mobility_stop_density": 7.72,
-    "trips_per_hour_proxy": 2.12
+    "trips_per_hour_proxy": 2.14
   },
   {
     "district_slug": "desnianskyi",
@@ -19,7 +19,7 @@
     "district_slug": "dniprovskyi",
     "stop_count": 119,
     "route_count": 42,
-    "total_trips": 8640.0,
+    "total_trips": 8660.0,
     "mobility_stop_density": 4.76,
     "trips_per_hour_proxy": 1.32
   },
