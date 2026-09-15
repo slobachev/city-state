@@ -35,7 +35,7 @@
     "district_slug": "obolonskyi",
     "stop_count": 218,
     "route_count": 47,
-    "total_trips": 16243.0,
+    "total_trips": 16239.0,
     "mobility_stop_density": 8.72,
     "trips_per_hour_proxy": 2.47
   },
@@ -67,7 +67,7 @@
     "district_slug": "sviatoshynskyi",
     "stop_count": 126,
     "route_count": 34,
-    "total_trips": 9002.0,
+    "total_trips": 8993.0,
     "mobility_stop_density": 5.04,
     "trips_per_hour_proxy": 1.37
   }
