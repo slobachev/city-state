@@ -1,67 +1,67 @@
 {
-  "generated_at": "2026-09-24T09:41:17.308811Z",
+  "generated_at": "2026-09-25T09:58:48.088712Z",
   "city": "Kyiv",
   "kpis": {
-    "pm25_avg": 6.53,
-    "aqi_avg": 26.5,
+    "pm25_avg": 6.5,
+    "aqi_avg": 26.3,
     "exceedance_rate": 3.3,
-    "period_start": "2026-06-26T12:00:00",
-    "period_end": "2026-09-24T12:00:00"
+    "period_start": "2026-06-27T12:00:00",
+    "period_end": "2026-09-25T12:00:00"
   },
   "worst_districts": [
     {
       "district_slug": "sviatoshynskyi",
       "district_name": "Sviatoshynskyi",
-      "pm25_avg": 9.15182156801858,
-      "exceedance_rate": 13.736263736263734
+      "pm25_avg": 9.173319633009585,
+      "exceedance_rate": 13.827838827838827
     },
     {
       "district_slug": "solomianskyi",
       "district_name": "Solomianskyi",
-      "pm25_avg": 8.803116270176705,
-      "exceedance_rate": 13.003663003663005
+      "pm25_avg": 8.770490767735662,
+      "exceedance_rate": 12.912087912087912
     },
     {
       "district_slug": "podilskyi",
       "district_name": "Podilskyi",
-      "pm25_avg": 8.058849593424231,
-      "exceedance_rate": 7.890377412849323
+      "pm25_avg": 8.06072206151259,
+      "exceedance_rate": 7.865168539325842
     }
   ],
   "best_districts": [
     {
       "district_slug": "holosiivskyi",
       "district_name": "Holosiivskyi",
-      "pm25_avg": 5.513594343908316,
-      "exceedance_rate": 1.8315018315018317
-    },
-    {
-      "district_slug": "obolonskyi",
-      "district_name": "Obolonskyi",
-      "pm25_avg": 5.800869058649276,
-      "exceedance_rate": 6.308887191240132
+      "pm25_avg": 5.539299083961564,
+      "exceedance_rate": 2.0604395604395602
     },
     {
       "district_slug": "dniprovskyi",
       "district_name": "Dniprovskyi",
-      "pm25_avg": 5.859872254903652,
-      "exceedance_rate": 2.7930402930402933
+      "pm25_avg": 5.887479787350274,
+      "exceedance_rate": 2.9761904761904767
+    },
+    {
+      "district_slug": "obolonskyi",
+      "district_name": "Obolonskyi",
+      "pm25_avg": 5.907645411548075,
+      "exceedance_rate": 6.725137607490549
     }
   ],
   "seasonal": [
     {
       "season": "summer",
-      "pm25_avg": 7.272180255152668
+      "pm25_avg": 7.338435394015848
     },
     {
       "season": "autumn",
-      "pm25_avg": 6.234974729635443
+      "pm25_avg": 6.205437880690735
     }
   ],
   "correlations": {
     "pm25_wind": -0.174,
-    "pm25_humidity": 0.114,
-    "pm25_temperature": 0.274,
+    "pm25_humidity": 0.106,
+    "pm25_temperature": 0.28,
     "sample_size": 2161
   },
   "findings": [
