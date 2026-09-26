@@ -1,61 +1,5 @@
 [
   {
-    "timestamp": "2026-06-27T12:00:00",
-    "pm25_ug_m3": 6.96,
-    "aqi_pm25": 29.0,
-    "humidity_pct": 40.0,
-    "wind_speed_ms": 3.0
-  },
-  {
-    "timestamp": "2026-06-27T15:00:00",
-    "pm25_ug_m3": 5.04,
-    "aqi_pm25": 21.0,
-    "humidity_pct": 35.0,
-    "wind_speed_ms": 3.0
-  },
-  {
-    "timestamp": "2026-06-27T18:00:00",
-    "pm25_ug_m3": 9.12,
-    "aqi_pm25": 38.0,
-    "humidity_pct": 36.0,
-    "wind_speed_ms": 3.0
-  },
-  {
-    "timestamp": "2026-06-27T21:00:00",
-    "pm25_ug_m3": 28.74,
-    "aqi_pm25": 86.0,
-    "humidity_pct": 44.0,
-    "wind_speed_ms": 0.0
-  },
-  {
-    "timestamp": "2026-06-28T00:00:00",
-    "pm25_ug_m3": 27.79,
-    "aqi_pm25": 84.0,
-    "humidity_pct": 61.0,
-    "wind_speed_ms": 0.0
-  },
-  {
-    "timestamp": "2026-06-28T03:00:00",
-    "pm25_ug_m3": 17.33,
-    "aqi_pm25": 62.0,
-    "humidity_pct": 64.0,
-    "wind_speed_ms": 2.0
-  },
-  {
-    "timestamp": "2026-06-28T06:00:00",
-    "pm25_ug_m3": 11.76,
-    "aqi_pm25": 49.0,
-    "humidity_pct": 71.0,
-    "wind_speed_ms": 1.0
-  },
-  {
-    "timestamp": "2026-06-28T09:00:00",
-    "pm25_ug_m3": 7.68,
-    "aqi_pm25": 32.0,
-    "humidity_pct": 50.0,
-    "wind_speed_ms": 2.0
-  },
-  {
     "timestamp": "2026-06-28T12:00:00",
     "pm25_ug_m3": 9.6,
     "aqi_pm25": 40.0,
@@ -5043,6 +4987,62 @@
     "timestamp": "2026-09-25T12:00:00",
     "pm25_ug_m3": 6.0,
     "aqi_pm25": 25.0,
+    "humidity_pct": 64.0,
+    "wind_speed_ms": 3.0
+  },
+  {
+    "timestamp": "2026-09-25T15:00:00",
+    "pm25_ug_m3": 3.6,
+    "aqi_pm25": 15.0,
+    "humidity_pct": 55.0,
+    "wind_speed_ms": 3.0
+  },
+  {
+    "timestamp": "2026-09-25T18:00:00",
+    "pm25_ug_m3": 3.6,
+    "aqi_pm25": 15.0,
+    "humidity_pct": 60.0,
+    "wind_speed_ms": 0.0
+  },
+  {
+    "timestamp": "2026-09-25T21:00:00",
+    "pm25_ug_m3": 7.2,
+    "aqi_pm25": 30.0,
+    "humidity_pct": 81.0,
+    "wind_speed_ms": 2.0
+  },
+  {
+    "timestamp": "2026-09-26T00:00:00",
+    "pm25_ug_m3": 8.4,
+    "aqi_pm25": 35.0,
+    "humidity_pct": 82.0,
+    "wind_speed_ms": 1.0
+  },
+  {
+    "timestamp": "2026-09-26T03:00:00",
+    "pm25_ug_m3": 6.48,
+    "aqi_pm25": 27.0,
+    "humidity_pct": 83.0,
+    "wind_speed_ms": 0.0
+  },
+  {
+    "timestamp": "2026-09-26T06:00:00",
+    "pm25_ug_m3": 5.04,
+    "aqi_pm25": 21.0,
+    "humidity_pct": 92.0,
+    "wind_speed_ms": 0.0
+  },
+  {
+    "timestamp": "2026-09-26T09:00:00",
+    "pm25_ug_m3": 6.24,
+    "aqi_pm25": 26.0,
+    "humidity_pct": 84.0,
+    "wind_speed_ms": 1.0
+  },
+  {
+    "timestamp": "2026-09-26T12:00:00",
+    "pm25_ug_m3": 5.76,
+    "aqi_pm25": 24.0,
     "humidity_pct": null,
     "wind_speed_ms": null
   }
