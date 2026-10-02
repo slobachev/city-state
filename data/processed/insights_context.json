@@ -1,155 +1,155 @@
 {
   "overview": {
-    "generated_at": "2026-10-01T11:19:10.372926Z",
+    "generated_at": "2026-10-02T10:51:36.458604Z",
     "city": "Kyiv",
     "kpis": {
-      "pm25_avg": 6.2,
-      "aqi_avg": 25.4,
-      "exceedance_rate": 2.2,
-      "period_start": "2026-07-03T14:00:00",
-      "period_end": "2026-10-01T14:00:00"
+      "pm25_avg": 6.16,
+      "aqi_avg": 25.3,
+      "exceedance_rate": 2.1,
+      "period_start": "2026-07-04T13:00:00",
+      "period_end": "2026-10-02T13:00:00"
     },
     "worst_districts": [
       {
         "district_slug": "sviatoshynskyi",
         "district_name": "Sviatoshynskyi",
-        "pm25_avg": 9.020654593705615,
-        "exceedance_rate": 13.28754578754579
+        "pm25_avg": 8.943364169843763,
+        "exceedance_rate": 12.957875457875462
       },
       {
         "district_slug": "solomianskyi",
         "district_name": "Solomianskyi",
-        "pm25_avg": 8.156108058608059,
-        "exceedance_rate": 11.108058608058608
+        "pm25_avg": 7.999198998280628,
+        "exceedance_rate": 10.66849816849817
       },
       {
         "district_slug": "podilskyi",
         "district_name": "Podilskyi",
-        "pm25_avg": 7.978287657920312,
-        "exceedance_rate": 7.50915750915751
+        "pm25_avg": 7.78052232435278,
+        "exceedance_rate": 6.95970695970696
       }
     ],
     "best_districts": [
       {
         "district_slug": "holosiivskyi",
         "district_name": "Holosiivskyi",
-        "pm25_avg": 5.316178291096659,
-        "exceedance_rate": 1.3827838827838825
+        "pm25_avg": 5.21237487002793,
+        "exceedance_rate": 1.0531135531135534
       },
       {
         "district_slug": "dniprovskyi",
         "district_name": "Dniprovskyi",
-        "pm25_avg": 5.434244598938476,
-        "exceedance_rate": 1.5384615384615385
+        "pm25_avg": 5.291479812704304,
+        "exceedance_rate": 1.098901098901099
       },
       {
         "district_slug": "obolonskyi",
         "district_name": "Obolonskyi",
-        "pm25_avg": 6.017398654903364,
-        "exceedance_rate": 6.189839572192513
+        "pm25_avg": 5.966361733877571,
+        "exceedance_rate": 5.930099312452254
       }
     ],
     "seasonal": [
       {
         "season": "summer",
-        "pm25_avg": 6.916128803311412
+        "pm25_avg": 6.713100158819659
       },
       {
         "season": "autumn",
-        "pm25_avg": 6.554393647136273
+        "pm25_avg": 6.549584625196229
       }
     ],
     "correlations": {
-      "pm25_wind": -0.195,
-      "pm25_humidity": 0.181,
-      "pm25_temperature": 0.184,
+      "pm25_wind": -0.21,
+      "pm25_humidity": 0.187,
+      "pm25_temperature": 0.174,
       "sample_size": 2161
     },
     "findings": [
-      "Sviatoshynskyi has the highest average PM2.5 (9.0 \u00b5g/m\u00b3) across the observation period.",
-      "Seasonal pattern: summer averages 6.9 \u00b5g/m\u00b3 vs autumn at 6.6 \u00b5g/m\u00b3.",
-      "PM2.5 shows a negative correlation with wind speed (r = -0.19), suggesting dispersion effects.",
-      "Holosiivskyi consistently reports the lowest PM2.5 levels (5.3 \u00b5g/m\u00b3 average)."
+      "Sviatoshynskyi has the highest average PM2.5 (8.9 \u00b5g/m\u00b3) across the observation period.",
+      "Seasonal pattern: summer averages 6.7 \u00b5g/m\u00b3 vs autumn at 6.5 \u00b5g/m\u00b3.",
+      "PM2.5 shows a negative correlation with wind speed (r = -0.21), suggesting dispersion effects.",
+      "Holosiivskyi consistently reports the lowest PM2.5 levels (5.2 \u00b5g/m\u00b3 average)."
     ]
   },
   "districts": [
     {
       "district_slug": "sviatoshynskyi",
       "district_name": "Sviatoshynskyi",
-      "pm25_avg": 9.02,
-      "exceedance_rate": 13.3,
+      "pm25_avg": 8.94,
+      "exceedance_rate": 13.0,
       "stop_count": 19,
       "mobility_stop_density": 0.76
     },
     {
       "district_slug": "solomianskyi",
       "district_name": "Solomianskyi",
-      "pm25_avg": 8.16,
-      "exceedance_rate": 11.1,
+      "pm25_avg": 8.0,
+      "exceedance_rate": 10.7,
       "stop_count": 21,
       "mobility_stop_density": 0.84
     },
     {
       "district_slug": "podilskyi",
       "district_name": "Podilskyi",
-      "pm25_avg": 7.98,
-      "exceedance_rate": 7.5,
+      "pm25_avg": 7.78,
+      "exceedance_rate": 7.0,
       "stop_count": 17,
       "mobility_stop_density": 0.68
     },
     {
       "district_slug": "desnianskyi",
       "district_name": "Desnianskyi",
-      "pm25_avg": 6.67,
-      "exceedance_rate": 5.7,
+      "pm25_avg": 6.48,
+      "exceedance_rate": 5.0,
       "stop_count": 9,
       "mobility_stop_density": 0.36
     },
     {
       "district_slug": "shevchenkivskyi",
       "district_name": "Shevchenkivskyi",
-      "pm25_avg": 6.57,
-      "exceedance_rate": 3.6,
+      "pm25_avg": 6.43,
+      "exceedance_rate": 3.3,
       "stop_count": 23,
       "mobility_stop_density": 0.92
     },
     {
       "district_slug": "pecherskyi",
       "district_name": "Pecherskyi",
-      "pm25_avg": 6.46,
-      "exceedance_rate": 5.4,
+      "pm25_avg": 6.28,
+      "exceedance_rate": 4.8,
       "stop_count": 15,
       "mobility_stop_density": 0.6
     },
     {
       "district_slug": "darnytskyi",
       "district_name": "Darnytskyi",
-      "pm25_avg": 6.16,
-      "exceedance_rate": 1.9,
+      "pm25_avg": 6.06,
+      "exceedance_rate": 1.5,
       "stop_count": 7,
       "mobility_stop_density": 0.28
     },
     {
       "district_slug": "obolonskyi",
       "district_name": "Obolonskyi",
-      "pm25_avg": 6.02,
-      "exceedance_rate": 6.2,
+      "pm25_avg": 5.97,
+      "exceedance_rate": 5.9,
       "stop_count": 13,
       "mobility_stop_density": 0.52
     },
     {
       "district_slug": "dniprovskyi",
       "district_name": "Dniprovskyi",
-      "pm25_avg": 5.43,
-      "exceedance_rate": 1.5,
+      "pm25_avg": 5.29,
+      "exceedance_rate": 1.1,
       "stop_count": 11,
       "mobility_stop_density": 0.44
     },
     {
       "district_slug": "holosiivskyi",
       "district_name": "Holosiivskyi",
-      "pm25_avg": 5.32,
-      "exceedance_rate": 1.4,
+      "pm25_avg": 5.21,
+      "exceedance_rate": 1.1,
       "stop_count": 5,
       "mobility_stop_density": 0.2
     }
