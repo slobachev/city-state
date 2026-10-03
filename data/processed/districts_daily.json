@@ -1,200 +1,100 @@
 [
   {
-    "date": "2026-07-04T00:00:00",
+    "date": "2026-07-05T00:00:00",
     "district_slug": "darnytskyi",
     "district_name": "Darnytskyi",
-    "pm25_avg": 2.77,
+    "pm25_avg": 3.02,
+    "aqi_avg": 12.6,
+    "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-07-05T00:00:00",
+    "district_slug": "desnianskyi",
+    "district_name": "Desnianskyi",
+    "pm25_avg": 3.1,
+    "aqi_avg": 12.9,
+    "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-07-05T00:00:00",
+    "district_slug": "dniprovskyi",
+    "district_name": "Dniprovskyi",
+    "pm25_avg": 2.68,
+    "aqi_avg": 11.2,
+    "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-07-05T00:00:00",
+    "district_slug": "holosiivskyi",
+    "district_name": "Holosiivskyi",
+    "pm25_avg": 2.56,
+    "aqi_avg": 10.7,
+    "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-07-05T00:00:00",
+    "district_slug": "obolonskyi",
+    "district_name": "Obolonskyi",
+    "pm25_avg": 0.8,
+    "aqi_avg": 3.3,
+    "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-07-05T00:00:00",
+    "district_slug": "pecherskyi",
+    "district_name": "Pecherskyi",
+    "pm25_avg": 2.8,
+    "aqi_avg": 11.7,
+    "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-07-05T00:00:00",
+    "district_slug": "podilskyi",
+    "district_name": "Podilskyi",
+    "pm25_avg": 3.38,
+    "aqi_avg": 14.1,
+    "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-07-05T00:00:00",
+    "district_slug": "shevchenkivskyi",
+    "district_name": "Shevchenkivskyi",
+    "pm25_avg": 3.56,
+    "aqi_avg": 14.8,
+    "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-07-05T00:00:00",
+    "district_slug": "solomianskyi",
+    "district_name": "Solomianskyi",
+    "pm25_avg": 2.06,
+    "aqi_avg": 8.6,
+    "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-07-05T00:00:00",
+    "district_slug": "sviatoshynskyi",
+    "district_name": "Sviatoshynskyi",
+    "pm25_avg": 2.76,
     "aqi_avg": 11.5,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-04T00:00:00",
-    "district_slug": "desnianskyi",
-    "district_name": "Desnianskyi",
-    "pm25_avg": 2.73,
-    "aqi_avg": 11.4,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-04T00:00:00",
-    "district_slug": "dniprovskyi",
-    "district_name": "Dniprovskyi",
-    "pm25_avg": 2.84,
-    "aqi_avg": 11.8,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-04T00:00:00",
-    "district_slug": "holosiivskyi",
-    "district_name": "Holosiivskyi",
-    "pm25_avg": 2.05,
-    "aqi_avg": 8.5,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-04T00:00:00",
-    "district_slug": "obolonskyi",
-    "district_name": "Obolonskyi",
-    "pm25_avg": 0.81,
-    "aqi_avg": 3.4,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-04T00:00:00",
-    "district_slug": "pecherskyi",
-    "district_name": "Pecherskyi",
-    "pm25_avg": 2.36,
-    "aqi_avg": 9.8,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-04T00:00:00",
-    "district_slug": "podilskyi",
-    "district_name": "Podilskyi",
-    "pm25_avg": 3.23,
-    "aqi_avg": 13.5,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-04T00:00:00",
-    "district_slug": "shevchenkivskyi",
-    "district_name": "Shevchenkivskyi",
-    "pm25_avg": 2.92,
-    "aqi_avg": 12.2,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-04T00:00:00",
-    "district_slug": "solomianskyi",
-    "district_name": "Solomianskyi",
-    "pm25_avg": 1.44,
-    "aqi_avg": 6.0,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-04T00:00:00",
-    "district_slug": "sviatoshynskyi",
-    "district_name": "Sviatoshynskyi",
-    "pm25_avg": 2.64,
-    "aqi_avg": 11.0,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-05T00:00:00",
-    "district_slug": "darnytskyi",
-    "district_name": "Darnytskyi",
-    "pm25_avg": 3.01,
-    "aqi_avg": 12.5,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-05T00:00:00",
-    "district_slug": "desnianskyi",
-    "district_name": "Desnianskyi",
-    "pm25_avg": 3.66,
-    "aqi_avg": 15.3,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-05T00:00:00",
-    "district_slug": "dniprovskyi",
-    "district_name": "Dniprovskyi",
-    "pm25_avg": 2.71,
-    "aqi_avg": 11.3,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-05T00:00:00",
-    "district_slug": "holosiivskyi",
-    "district_name": "Holosiivskyi",
-    "pm25_avg": 2.71,
-    "aqi_avg": 11.3,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-05T00:00:00",
-    "district_slug": "obolonskyi",
-    "district_name": "Obolonskyi",
-    "pm25_avg": 0.82,
-    "aqi_avg": 3.4,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-05T00:00:00",
-    "district_slug": "pecherskyi",
-    "district_name": "Pecherskyi",
-    "pm25_avg": 3.08,
-    "aqi_avg": 12.8,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-05T00:00:00",
-    "district_slug": "podilskyi",
-    "district_name": "Podilskyi",
-    "pm25_avg": 3.87,
-    "aqi_avg": 16.1,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-05T00:00:00",
-    "district_slug": "shevchenkivskyi",
-    "district_name": "Shevchenkivskyi",
-    "pm25_avg": 3.6,
-    "aqi_avg": 15.0,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-05T00:00:00",
-    "district_slug": "solomianskyi",
-    "district_name": "Solomianskyi",
-    "pm25_avg": 2.6,
-    "aqi_avg": 10.8,
-    "exceedance_rate": 0.0,
-    "humidity_avg": null,
-    "wind_avg": null
-  },
-  {
-    "date": "2026-07-05T00:00:00",
-    "district_slug": "sviatoshynskyi",
-    "district_name": "Sviatoshynskyi",
-    "pm25_avg": 3.31,
-    "aqi_avg": 13.8,
     "exceedance_rate": 0.0,
     "humidity_avg": null,
     "wind_avg": null
@@ -8863,8 +8763,8 @@
     "date": "2026-10-02T00:00:00",
     "district_slug": "darnytskyi",
     "district_name": "Darnytskyi",
-    "pm25_avg": 7.9,
-    "aqi_avg": 32.9,
+    "pm25_avg": 6.79,
+    "aqi_avg": 28.3,
     "exceedance_rate": 0.0,
     "humidity_avg": null,
     "wind_avg": null
@@ -8873,8 +8773,8 @@
     "date": "2026-10-02T00:00:00",
     "district_slug": "desnianskyi",
     "district_name": "Desnianskyi",
-    "pm25_avg": 6.84,
-    "aqi_avg": 28.5,
+    "pm25_avg": 5.63,
+    "aqi_avg": 23.5,
     "exceedance_rate": 0.0,
     "humidity_avg": null,
     "wind_avg": null
@@ -8883,8 +8783,8 @@
     "date": "2026-10-02T00:00:00",
     "district_slug": "dniprovskyi",
     "district_name": "Dniprovskyi",
-    "pm25_avg": 5.47,
-    "aqi_avg": 22.8,
+    "pm25_avg": 4.85,
+    "aqi_avg": 20.2,
     "exceedance_rate": 0.0,
     "humidity_avg": null,
     "wind_avg": null
@@ -8893,8 +8793,8 @@
     "date": "2026-10-02T00:00:00",
     "district_slug": "holosiivskyi",
     "district_name": "Holosiivskyi",
-    "pm25_avg": 6.12,
-    "aqi_avg": 25.5,
+    "pm25_avg": 5.11,
+    "aqi_avg": 21.3,
     "exceedance_rate": 0.0,
     "humidity_avg": null,
     "wind_avg": null
@@ -8903,8 +8803,8 @@
     "date": "2026-10-02T00:00:00",
     "district_slug": "obolonskyi",
     "district_name": "Obolonskyi",
-    "pm25_avg": 6.81,
-    "aqi_avg": 28.4,
+    "pm25_avg": 5.6,
+    "aqi_avg": 23.3,
     "exceedance_rate": 0.0,
     "humidity_avg": null,
     "wind_avg": null
@@ -8913,8 +8813,8 @@
     "date": "2026-10-02T00:00:00",
     "district_slug": "pecherskyi",
     "district_name": "Pecherskyi",
-    "pm25_avg": 5.97,
-    "aqi_avg": 24.9,
+    "pm25_avg": 5.03,
+    "aqi_avg": 21.0,
     "exceedance_rate": 0.0,
     "humidity_avg": null,
     "wind_avg": null
@@ -8923,9 +8823,9 @@
     "date": "2026-10-02T00:00:00",
     "district_slug": "podilskyi",
     "district_name": "Podilskyi",
-    "pm25_avg": 10.05,
-    "aqi_avg": 41.9,
-    "exceedance_rate": 0.0,
+    "pm25_avg": 8.99,
+    "aqi_avg": 36.5,
+    "exceedance_rate": 8.3,
     "humidity_avg": null,
     "wind_avg": null
   },
@@ -8933,8 +8833,8 @@
     "date": "2026-10-02T00:00:00",
     "district_slug": "shevchenkivskyi",
     "district_name": "Shevchenkivskyi",
-    "pm25_avg": 7.44,
-    "aqi_avg": 31.0,
+    "pm25_avg": 5.71,
+    "aqi_avg": 23.8,
     "exceedance_rate": 0.0,
     "humidity_avg": null,
     "wind_avg": null
@@ -8943,8 +8843,8 @@
     "date": "2026-10-02T00:00:00",
     "district_slug": "solomianskyi",
     "district_name": "Solomianskyi",
-    "pm25_avg": 6.86,
-    "aqi_avg": 28.6,
+    "pm25_avg": 5.4,
+    "aqi_avg": 22.5,
     "exceedance_rate": 0.0,
     "humidity_avg": null,
     "wind_avg": null
@@ -8953,9 +8853,109 @@
     "date": "2026-10-02T00:00:00",
     "district_slug": "sviatoshynskyi",
     "district_name": "Sviatoshynskyi",
-    "pm25_avg": 9.7,
-    "aqi_avg": 40.4,
+    "pm25_avg": 8.44,
+    "aqi_avg": 35.2,
     "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-10-03T00:00:00",
+    "district_slug": "darnytskyi",
+    "district_name": "Darnytskyi",
+    "pm25_avg": 10.99,
+    "aqi_avg": 44.5,
+    "exceedance_rate": 15.4,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-10-03T00:00:00",
+    "district_slug": "desnianskyi",
+    "district_name": "Desnianskyi",
+    "pm25_avg": 8.82,
+    "aqi_avg": 36.8,
+    "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-10-03T00:00:00",
+    "district_slug": "dniprovskyi",
+    "district_name": "Dniprovskyi",
+    "pm25_avg": 10.85,
+    "aqi_avg": 43.5,
+    "exceedance_rate": 15.4,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-10-03T00:00:00",
+    "district_slug": "holosiivskyi",
+    "district_name": "Holosiivskyi",
+    "pm25_avg": 7.55,
+    "aqi_avg": 31.5,
+    "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-10-03T00:00:00",
+    "district_slug": "obolonskyi",
+    "district_name": "Obolonskyi",
+    "pm25_avg": 12.35,
+    "aqi_avg": 46.2,
+    "exceedance_rate": 30.8,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-10-03T00:00:00",
+    "district_slug": "pecherskyi",
+    "district_name": "Pecherskyi",
+    "pm25_avg": 9.54,
+    "aqi_avg": 39.8,
+    "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-10-03T00:00:00",
+    "district_slug": "podilskyi",
+    "district_name": "Podilskyi",
+    "pm25_avg": 18.51,
+    "aqi_avg": 63.0,
+    "exceedance_rate": 61.5,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-10-03T00:00:00",
+    "district_slug": "shevchenkivskyi",
+    "district_name": "Shevchenkivskyi",
+    "pm25_avg": 7.38,
+    "aqi_avg": 30.8,
+    "exceedance_rate": 0.0,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-10-03T00:00:00",
+    "district_slug": "solomianskyi",
+    "district_name": "Solomianskyi",
+    "pm25_avg": 10.88,
+    "aqi_avg": 43.7,
+    "exceedance_rate": 15.4,
+    "humidity_avg": null,
+    "wind_avg": null
+  },
+  {
+    "date": "2026-10-03T00:00:00",
+    "district_slug": "sviatoshynskyi",
+    "district_name": "Sviatoshynskyi",
+    "pm25_avg": 11.6,
+    "aqi_avg": 45.9,
+    "exceedance_rate": 23.1,
     "humidity_avg": null,
     "wind_avg": null
   }
