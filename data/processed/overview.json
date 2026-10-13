@@ -1,67 +1,67 @@
 {
-  "generated_at": "2026-10-12T12:37:34.576679Z",
+  "generated_at": "2026-10-13T12:24:34.315249Z",
   "city": "Kyiv",
   "kpis": {
-    "pm25_avg": 6.73,
+    "pm25_avg": 6.72,
     "aqi_avg": 27.4,
     "exceedance_rate": 3.7,
-    "period_start": "2026-07-14T15:00:00",
-    "period_end": "2026-10-12T15:00:00"
+    "period_start": "2026-07-15T15:00:00",
+    "period_end": "2026-10-13T15:00:00"
   },
   "worst_districts": [
     {
       "district_slug": "sviatoshynskyi",
       "district_name": "Sviatoshynskyi",
-      "pm25_avg": 9.923210610251424,
-      "exceedance_rate": 16.34615384615384
+      "pm25_avg": 9.908683748224565,
+      "exceedance_rate": 15.934065934065929
     },
     {
       "district_slug": "podilskyi",
       "district_name": "Podilskyi",
-      "pm25_avg": 8.866052264933739,
+      "pm25_avg": 8.861540583304711,
       "exceedance_rate": 11.538461538461538
     },
     {
       "district_slug": "solomianskyi",
       "district_name": "Solomianskyi",
-      "pm25_avg": 8.545902294983927,
-      "exceedance_rate": 12.133699633699631
+      "pm25_avg": 8.54192634746206,
+      "exceedance_rate": 11.996336996336995
     }
   ],
   "best_districts": [
     {
       "district_slug": "holosiivskyi",
       "district_name": "Holosiivskyi",
-      "pm25_avg": 5.742845929580623,
+      "pm25_avg": 5.732754354489049,
       "exceedance_rate": 1.877289377289377
     },
     {
       "district_slug": "dniprovskyi",
       "district_name": "Dniprovskyi",
-      "pm25_avg": 5.896337557000821,
+      "pm25_avg": 5.877381513044778,
       "exceedance_rate": 2.884615384615385
     },
     {
       "district_slug": "obolonskyi",
       "district_name": "Obolonskyi",
-      "pm25_avg": 6.564996029368597,
-      "exceedance_rate": 6.8896461023433755
+      "pm25_avg": 6.612000011311292,
+      "exceedance_rate": 6.88193952279707
     }
   ],
   "seasonal": [
     {
       "season": "autumn",
-      "pm25_avg": 7.5020799775621265
+      "pm25_avg": 7.54611490876234
     },
     {
       "season": "summer",
-      "pm25_avg": 7.133414249008955
+      "pm25_avg": 7.06460563152902
     }
   ],
   "correlations": {
-    "pm25_wind": -0.186,
-    "pm25_humidity": 0.235,
-    "pm25_temperature": 0.044,
+    "pm25_wind": -0.187,
+    "pm25_humidity": 0.236,
+    "pm25_temperature": 0.034,
     "sample_size": 2161
   },
   "findings": [
