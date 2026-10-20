@@ -35,9 +35,9 @@
     "district_slug": "obolonskyi",
     "stop_count": 219,
     "route_count": 47,
-    "total_trips": 16270.0,
+    "total_trips": 16258.0,
     "mobility_stop_density": 8.76,
-    "trips_per_hour_proxy": 2.48
+    "trips_per_hour_proxy": 2.47
   },
   {
     "district_slug": "pecherskyi",
