@@ -11,15 +11,15 @@
     "district_slug": "desnianskyi",
     "stop_count": 172,
     "route_count": 33,
-    "total_trips": 11334.0,
+    "total_trips": 11333.0,
     "mobility_stop_density": 6.88,
-    "trips_per_hour_proxy": 1.73
+    "trips_per_hour_proxy": 1.72
   },
   {
     "district_slug": "dniprovskyi",
     "stop_count": 121,
     "route_count": 43,
-    "total_trips": 8823.0,
+    "total_trips": 8824.0,
     "mobility_stop_density": 4.84,
     "trips_per_hour_proxy": 1.34
   },
@@ -43,7 +43,7 @@
     "district_slug": "pecherskyi",
     "stop_count": 72,
     "route_count": 26,
-    "total_trips": 5165.0,
+    "total_trips": 5167.0,
     "mobility_stop_density": 2.88,
     "trips_per_hour_proxy": 0.79
   },
