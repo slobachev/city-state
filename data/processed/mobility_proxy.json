@@ -3,15 +3,15 @@
     "district_slug": "darnytskyi",
     "stop_count": 214,
     "route_count": 44,
-    "total_trips": 14794.0,
+    "total_trips": 14866.0,
     "mobility_stop_density": 8.56,
-    "trips_per_hour_proxy": 2.25
+    "trips_per_hour_proxy": 2.26
   },
   {
     "district_slug": "desnianskyi",
     "stop_count": 181,
     "route_count": 36,
-    "total_trips": 11244.0,
+    "total_trips": 11246.0,
     "mobility_stop_density": 7.24,
     "trips_per_hour_proxy": 1.71
   },
@@ -19,31 +19,31 @@
     "district_slug": "dniprovskyi",
     "stop_count": 136,
     "route_count": 48,
-    "total_trips": 8347.0,
+    "total_trips": 8339.0,
     "mobility_stop_density": 5.44,
     "trips_per_hour_proxy": 1.27
   },
   {
     "district_slug": "holosiivskyi",
-    "stop_count": 271,
-    "route_count": 57,
-    "total_trips": 16475.0,
-    "mobility_stop_density": 10.84,
-    "trips_per_hour_proxy": 2.51
+    "stop_count": 278,
+    "route_count": 58,
+    "total_trips": 16565.0,
+    "mobility_stop_density": 11.12,
+    "trips_per_hour_proxy": 2.52
   },
   {
     "district_slug": "obolonskyi",
     "stop_count": 297,
     "route_count": 65,
-    "total_trips": 19626.0,
+    "total_trips": 19611.0,
     "mobility_stop_density": 11.88,
-    "trips_per_hour_proxy": 2.99
+    "trips_per_hour_proxy": 2.98
   },
   {
     "district_slug": "pecherskyi",
     "stop_count": 95,
     "route_count": 35,
-    "total_trips": 6173.0,
+    "total_trips": 6181.0,
     "mobility_stop_density": 3.8,
     "trips_per_hour_proxy": 0.94
   },
@@ -51,7 +51,7 @@
     "district_slug": "podilskyi",
     "stop_count": 247,
     "route_count": 74,
-    "total_trips": 17366.0,
+    "total_trips": 17365.0,
     "mobility_stop_density": 9.88,
     "trips_per_hour_proxy": 2.64
   },
@@ -59,7 +59,7 @@
     "district_slug": "solomianskyi",
     "stop_count": 74,
     "route_count": 32,
-    "total_trips": 4879.0,
+    "total_trips": 4877.0,
     "mobility_stop_density": 2.96,
     "trips_per_hour_proxy": 0.74
   },
@@ -67,7 +67,7 @@
     "district_slug": "sviatoshynskyi",
     "stop_count": 140,
     "route_count": 39,
-    "total_trips": 10013.0,
+    "total_trips": 10004.0,
     "mobility_stop_density": 5.6,
     "trips_per_hour_proxy": 1.52
   }
