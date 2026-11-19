@@ -3,47 +3,47 @@
     "district_slug": "darnytskyi",
     "stop_count": 209,
     "route_count": 42,
-    "total_trips": 15296.0,
+    "total_trips": 15205.0,
     "mobility_stop_density": 8.36,
-    "trips_per_hour_proxy": 2.33
+    "trips_per_hour_proxy": 2.31
   },
   {
     "district_slug": "desnianskyi",
     "stop_count": 201,
     "route_count": 40,
-    "total_trips": 11985.0,
+    "total_trips": 11769.0,
     "mobility_stop_density": 8.04,
-    "trips_per_hour_proxy": 1.82
+    "trips_per_hour_proxy": 1.79
   },
   {
     "district_slug": "dniprovskyi",
     "stop_count": 152,
     "route_count": 54,
-    "total_trips": 9470.0,
+    "total_trips": 9332.0,
     "mobility_stop_density": 6.08,
-    "trips_per_hour_proxy": 1.44
+    "trips_per_hour_proxy": 1.42
   },
   {
     "district_slug": "holosiivskyi",
-    "stop_count": 279,
+    "stop_count": 278,
     "route_count": 59,
-    "total_trips": 16823.0,
-    "mobility_stop_density": 11.16,
-    "trips_per_hour_proxy": 2.56
+    "total_trips": 16653.0,
+    "mobility_stop_density": 11.12,
+    "trips_per_hour_proxy": 2.53
   },
   {
     "district_slug": "obolonskyi",
-    "stop_count": 294,
+    "stop_count": 293,
     "route_count": 64,
-    "total_trips": 20233.0,
-    "mobility_stop_density": 11.76,
-    "trips_per_hour_proxy": 3.08
+    "total_trips": 19966.0,
+    "mobility_stop_density": 11.72,
+    "trips_per_hour_proxy": 3.04
   },
   {
     "district_slug": "pecherskyi",
     "stop_count": 100,
     "route_count": 36,
-    "total_trips": 6533.0,
+    "total_trips": 6532.0,
     "mobility_stop_density": 4.0,
     "trips_per_hour_proxy": 0.99
   },
@@ -51,15 +51,15 @@
     "district_slug": "podilskyi",
     "stop_count": 249,
     "route_count": 75,
-    "total_trips": 17847.0,
+    "total_trips": 17827.0,
     "mobility_stop_density": 9.96,
-    "trips_per_hour_proxy": 2.72
+    "trips_per_hour_proxy": 2.71
   },
   {
     "district_slug": "solomianskyi",
     "stop_count": 73,
     "route_count": 31,
-    "total_trips": 4926.0,
+    "total_trips": 4913.0,
     "mobility_stop_density": 2.92,
     "trips_per_hour_proxy": 0.75
   },
