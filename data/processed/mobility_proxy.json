@@ -1,11 +1,11 @@
 [
   {
     "district_slug": "darnytskyi",
-    "stop_count": 217,
-    "route_count": 44,
-    "total_trips": 15473.0,
-    "mobility_stop_density": 8.68,
-    "trips_per_hour_proxy": 2.36
+    "stop_count": 213,
+    "route_count": 43,
+    "total_trips": 15361.0,
+    "mobility_stop_density": 8.52,
+    "trips_per_hour_proxy": 2.34
   },
   {
     "district_slug": "desnianskyi",
@@ -17,25 +17,25 @@
   },
   {
     "district_slug": "dniprovskyi",
-    "stop_count": 148,
-    "route_count": 53,
-    "total_trips": 9691.0,
-    "mobility_stop_density": 5.92,
-    "trips_per_hour_proxy": 1.48
+    "stop_count": 147,
+    "route_count": 52,
+    "total_trips": 9663.0,
+    "mobility_stop_density": 5.88,
+    "trips_per_hour_proxy": 1.47
   },
   {
     "district_slug": "holosiivskyi",
-    "stop_count": 290,
-    "route_count": 61,
-    "total_trips": 17171.0,
-    "mobility_stop_density": 11.6,
-    "trips_per_hour_proxy": 2.61
+    "stop_count": 284,
+    "route_count": 60,
+    "total_trips": 17003.0,
+    "mobility_stop_density": 11.36,
+    "trips_per_hour_proxy": 2.59
   },
   {
     "district_slug": "obolonskyi",
     "stop_count": 293,
     "route_count": 64,
-    "total_trips": 19878.0,
+    "total_trips": 19886.0,
     "mobility_stop_density": 11.72,
     "trips_per_hour_proxy": 3.03
   },
@@ -51,7 +51,7 @@
     "district_slug": "podilskyi",
     "stop_count": 249,
     "route_count": 75,
-    "total_trips": 18040.0,
+    "total_trips": 18044.0,
     "mobility_stop_density": 9.96,
     "trips_per_hour_proxy": 2.75
   },
@@ -59,7 +59,7 @@
     "district_slug": "solomianskyi",
     "stop_count": 73,
     "route_count": 31,
-    "total_trips": 4944.0,
+    "total_trips": 4940.0,
     "mobility_stop_density": 2.92,
     "trips_per_hour_proxy": 0.75
   },
