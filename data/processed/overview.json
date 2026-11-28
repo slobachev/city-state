@@ -1,73 +1,73 @@
 {
-  "generated_at": "2026-11-27T14:35:17.978599Z",
+  "generated_at": "2026-11-28T13:49:39.944611Z",
   "city": "Kyiv",
   "kpis": {
-    "pm25_avg": 8.01,
-    "aqi_avg": 32.4,
+    "pm25_avg": 7.98,
+    "aqi_avg": 32.2,
     "exceedance_rate": 6.6,
-    "period_start": "2026-08-29T16:00:00",
-    "period_end": "2026-11-27T16:00:00"
+    "period_start": "2026-08-30T15:00:00",
+    "period_end": "2026-11-28T15:00:00"
   },
   "worst_districts": [
     {
       "district_slug": "sviatoshynskyi",
       "district_name": "Sviatoshynskyi",
-      "pm25_avg": 11.393522936647187,
-      "exceedance_rate": 23.946886446886435
+      "pm25_avg": 11.375530512571329,
+      "exceedance_rate": 23.946886446886445
     },
     {
       "district_slug": "solomianskyi",
       "district_name": "Solomianskyi",
-      "pm25_avg": 11.192833858818249,
-      "exceedance_rate": 19.5970695970696
+      "pm25_avg": 11.159374112282272,
+      "exceedance_rate": 19.55128205128205
     },
     {
       "district_slug": "podilskyi",
       "district_name": "Podilskyi",
-      "pm25_avg": 10.710604170712193,
-      "exceedance_rate": 18.86368001536541
+      "pm25_avg": 10.674743095945209,
+      "exceedance_rate": 18.863680015365404
     }
   ],
   "best_districts": [
     {
       "district_slug": "dniprovskyi",
       "district_name": "Dniprovskyi",
-      "pm25_avg": 6.872874402508257,
+      "pm25_avg": 6.8448082529715215,
       "exceedance_rate": 4.716117216117215
     },
     {
       "district_slug": "pecherskyi",
       "district_name": "Pecherskyi",
-      "pm25_avg": 7.068145499958227,
-      "exceedance_rate": 3.617216117216118
+      "pm25_avg": 7.058317697042188,
+      "exceedance_rate": 3.6172161172161172
     },
     {
       "district_slug": "desnianskyi",
       "district_name": "Desnianskyi",
-      "pm25_avg": 7.285497708973696,
+      "pm25_avg": 7.28940311729087,
       "exceedance_rate": 4.899267399267399
     }
   ],
   "seasonal": [
     {
-      "season": "autumn",
-      "pm25_avg": 8.629298923538562
+      "season": "summer",
+      "pm25_avg": 8.747708333333332
     },
     {
-      "season": "summer",
-      "pm25_avg": 7.972708616780044
+      "season": "autumn",
+      "pm25_avg": 8.579671484680478
     }
   ],
   "correlations": {
-    "pm25_wind": -0.162,
+    "pm25_wind": -0.163,
     "pm25_humidity": 0.333,
-    "pm25_temperature": -0.062,
+    "pm25_temperature": -0.039,
     "sample_size": 2161
   },
   "findings": [
     "Sviatoshynskyi has the highest average PM2.5 (11.4 \u00b5g/m\u00b3) across the observation period.",
-    "Seasonal pattern: autumn averages 8.6 \u00b5g/m\u00b3 vs summer at 8.0 \u00b5g/m\u00b3.",
+    "Seasonal pattern: summer averages 8.7 \u00b5g/m\u00b3 vs autumn at 8.6 \u00b5g/m\u00b3.",
     "PM2.5 shows a negative correlation with wind speed (r = -0.16), suggesting dispersion effects.",
-    "Dniprovskyi consistently reports the lowest PM2.5 levels (6.9 \u00b5g/m\u00b3 average)."
+    "Dniprovskyi consistently reports the lowest PM2.5 levels (6.8 \u00b5g/m\u00b3 average)."
   ]
 }
